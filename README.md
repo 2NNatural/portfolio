@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Noah Neri — Portfolio
 
-## Getting Started
+> Personal portfolio site. Dark, technical, custom-built. Purpose: land employment by showcasing the ability to use AI tools to ship real projects fast.
 
-First, run the development server:
+**Status:** Built. Uncommitted. Pending GitHub push → Vercel deploy.
+
+---
+
+## Quick Start
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Docs
 
-## Learn More
+| File | Contents |
+|------|----------|
+| [CONTEXT.md](CONTEXT.md) | Full session memory — instructions, stack, decisions, preferences. Upload this to start the next session. |
+| [PROGRESS.md](PROGRESS.md) | Changelog of everything built. Current status per feature. Known issues. |
+| [ROADMAP.md](ROADMAP.md) | Single prioritized list of what comes next. |
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## How to Add a New Project
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Open [`src/data/projects.ts`](src/data/projects.ts) and add one object to the `PROJECTS` array:
 
-## Deploy on Vercel
+```ts
+{
+  id: "my-new-project",
+  title: "My New Project",
+  description: "2-3 sentence description.",
+  tags: ["AI", "Web3"],
+  thumbnail: "/images/projects/my-project.png",  // drop file in public/images/projects/
+  link: "https://...",
+  linkType: "external",   // "external" | "showcase" | "internal"
+  featured: false,
+}
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+No other file changes needed.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## How to Update MMA Model Stats
+
+Edit [`src/data/mma-showcase-data.ts`](src/data/mma-showcase-data.ts) — every field is plainly labeled with a comment.
+
+---
+
+## Project Structure
+
+```
+src/
+├── app/
+│   ├── page.tsx                      # Main single-page site (Hero → About → Projects → Resume → Contact)
+│   └── projects/mma-fight-model/     # MMA showcase sub-page
+├── components/
+│   ├── hero/MeshGradientCanvas.tsx   # Animated canvas hero background
+│   ├── layout/                       # Navbar, Footer, ThemeToggle
+│   ├── sections/                     # Hero, About, Projects, Resume, Contact
+│   └── ui/                           # ProjectCard, SkillTag, TimelineItem, StatsCard, ScrollReveal, SectionHeading
+├── data/                             # ALL content lives here — projects, resume, skills, MMA stats
+├── hooks/                            # useActiveSection (IntersectionObserver)
+├── lib/                              # utils (cn), fonts
+└── types/                            # TypeScript interfaces
+```
+
+---
+
+## Deploy
+
+1. Commit all files
+2. Create GitHub repo at [github.com/new](https://github.com/new) (Public, no README init)
+3. `git remote add origin https://github.com/USERNAME/portfolio.git && git push -u origin main`
+4. Import at [vercel.com/import](https://vercel.com/import) — Next.js auto-detected, no config needed
