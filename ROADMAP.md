@@ -4,34 +4,34 @@ One prioritized list. No competing roadmaps anywhere else.
 
 ---
 
-## Immediate (Do Now)
+## Immediate
 
 - [NEXT] **Replace MMA placeholder stats** — update `src/data/mma-showcase-data.ts` with real model accuracy, weight class breakdown, and recent predictions
-- [NEXT] **Add a custom domain** — configure on Vercel dashboard when ready to move off the default `.vercel.app` URL
-- [NEXT] **Swap resume PDF** — replace `public/Noah_Neri_resume.pdf` with the latest version whenever it's updated
+- [NEXT] **Generate a real OG image** — add a real `public/og-image.png` so the social preview metadata points to an actual branded image
+- [NEXT] **Add a custom domain** — configure the domain on Vercel, then update `src/app/layout.tsx` so `metadataBase` and `openGraph.url` stop using the Vercel URL
 
 ---
 
-## Soon (Next Session)
+## Soon
 
-- [SOON] **Add 4th+ project** — add one object to `src/data/projects.ts`, drop thumbnail in `public/images/projects/`
-- [SOON] **Generate a custom OG image** — replace the placeholder `/og-image.png` setup with a real social preview image
-- [SOON] **Add Vercel Analytics or Plausible** — start tracking live traffic and engagement
-
----
-
-## Later (Backlog)
-
-- [LATER] **Lighthouse audit** — run against the live Vercel deployment, target 90+ Performance / Accessibility / SEO
-- [LATER] **Case study sub-pages** — expand MMA showcase pattern to other projects (dedicated `/projects/[id]` pages with deeper write-ups)
-- [LATER] **Contact form** — replace email/phone pills with a working form (Resend or Formspree)
-- [LATER] **Blog / Writing section** — add a simple blog for technical writing (MDX)
+- [SOON] **Swap `public/Noah_Neri_resume.pdf` when the resume changes** — keep the downloadable PDF current with the latest resume version
+- [SOON] **Add a 4th+ project** — add one object to `src/data/projects.ts` and a matching asset in `public/images/projects/`
+- [SOON] **Add analytics** — integrate Vercel Analytics or Plausible for live traffic visibility
 
 ---
 
-## Maybe (Low Priority / Uncertain)
+## Later
 
-- [MAYBE] **Light mode polish** — dark mode is primary; light mode works but hasn't been deeply designed
-- [MAYBE] **Project filtering** — tag-based filter on the projects grid once there are 6+ projects
-- [MAYBE] **Three.js / WebGL hero** — current Canvas 2D mesh gradient is intentionally lightweight; only upgrade if the aesthetic demands it
-- [MAYBE] **MMA model paywall / NDA flow** — add a licensing inquiry form or Calendly link on the MMA showcase page
+- [LATER] **Run a Lighthouse audit against production** — target `90+` for Performance / Accessibility / SEO
+- [LATER] **Expand case-study sub-pages** — apply the MMA showcase pattern to additional projects
+- [LATER] **Add a real contact form** — replace the current contact pills with a working form (Resend or Formspree)
+- [LATER] **Add a writing/blog section** — simple MDX-based technical writing section
+
+---
+
+## Maybe
+
+- [MAYBE] **Polish light mode** — dark mode is still the primary designed experience
+- [MAYBE] **Add project filtering** — useful once the grid has 6+ projects
+- [MAYBE] **Upgrade the hero to Three.js / WebGL** — only if the aesthetic payoff is worth the added complexity
+- [MAYBE] **Add MMA model licensing / NDA flow** — licensing inquiry form, Calendly flow, or similar gated contact path
