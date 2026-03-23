@@ -144,10 +144,12 @@ src/
 | `duolingo-campaign` | DuoLingo Marketing Campaign | external → Google Slides | no |
 | `mma-fight-model` | MMA Fight Prediction Model | showcase → `/projects/mma-fight-model` | yes |
 
-**Project thumbnails missing** — need to add PNG/JPGs to `public/images/projects/`:
-- `prediction-market.png`
-- `duolingo-campaign.png`
-- `mma-model.png`
+**Project imagery**
+- Hero headshot: `public/images/headshots/noah-neri-headshot.jpeg`
+- Project covers:
+  - `public/images/projects/prediction-market.svg`
+  - `public/images/projects/duolingo-campaign.svg`
+  - `public/images/projects/mma-model.svg`
 
 ### Resume Data (from updated resume PDF — March 2026)
 **Education**
@@ -203,28 +205,27 @@ All animations respect `prefers-reduced-motion`.
 
 ---
 
-## Git / Deploy State (as of March 12, 2026)
+## Git / Deploy State (as of March 21, 2026)
 
 - Git repo initialized at `/Users/noahneri/portfolio/`
 - On branch `main`
-- **Only one commit exists:** `e40c31a Initial commit from Create Next App`
-- **All portfolio code is UNCOMMITTED** — staged and ready but not yet committed
-- `gh` CLI is NOT installed on this machine
+- Tracking remote branch `origin/main`
+- GitHub remote configured: `https://github.com/2NNatural/portfolio.git`
+- Latest local portfolio commit: `3ed0eee Initial portfolio build`
+- Portfolio is live at `https://noahneriportfolio.vercel.app/`
 - Dev server confirmed working on `localhost:3000`
-- No GitHub remote set yet
 
-### Deploy Steps (pending)
-1. `git add` all files + `git commit -m "Initial portfolio build"`
-2. User creates GitHub repo at github.com/new (Public, no README init)
-3. `git remote add origin https://github.com/USERNAME/portfolio.git && git push -u origin main`
-4. Import at vercel.com/import — Next.js auto-detected, no config needed
+### Deploy Workflow
+1. Make changes locally
+2. Commit to git
+3. Push to `main`
+4. Vercel redeploys from the connected GitHub repo
 
 ---
 
 ## Known Issues / Gaps
 
-- **Project thumbnails missing** — 404 on all three (graceful fallback shows first letter of project name)
 - **MMA stats are all placeholder** — needs real data from the actual model
 - **Resume PDF may need updating** — `public/Noah_Neri_resume.pdf` should be swapped out when a new version is ready
-- **`npm run build` not tested** — dev server works; build hasn't been run to verify production output
-- **No domain configured** — will use Vercel's default `.vercel.app` subdomain until custom domain is added
+- **No custom domain configured** — site is live on the default Vercel domain for now: `noahneriportfolio.vercel.app`
+- **Production build verified on March 23, 2026** — local `npm run build` now passes

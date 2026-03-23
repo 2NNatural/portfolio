@@ -13,7 +13,7 @@ export const PROJECTS: Project[] = [
     description:
       "A comprehensive directory mapping the prediction market ecosystem across 5 dimensions. Built with AI-assisted development — Next.js, Supabase, and a custom multi-axis taxonomy engine.",
     tags: ["AI Development", "Web3", "Vibe Coding", "Next.js"],
-    thumbnail: "/images/projects/prediction-market.png",
+    thumbnail: "/images/projects/prediction-market.svg",
     link: "https://prediction-market-directory.vercel.app/",
     linkType: "external",
     featured: true,
@@ -24,7 +24,7 @@ export const PROJECTS: Project[] = [
     description:
       "A full marketing campaign pitch for DuoLingo — AI-powered storyboarding, cohesive brand design using Nano Banana, and data-driven targeting strategy.",
     tags: ["AI Media & Design", "Marketing", "Brand Strategy"],
-    thumbnail: "/images/projects/duolingo-campaign.png",
+    thumbnail: "/images/projects/duolingo-campaign.svg",
     link: "https://docs.google.com/presentation/d/18GtXHATSaxgdtmFoto0gN84mt3Hc3O-4/edit?slide=id.p6#slide=id.p6",
     linkType: "external",
     featured: false,
@@ -35,7 +35,7 @@ export const PROJECTS: Project[] = [
     description:
       "A proprietary ML model predicting UFC fight outcomes. Select accuracy metrics and sample predictions are showcased — the model itself is private, used for live betting and future paywall.",
     tags: ["Machine Learning", "Data Science", "Sports Analytics"],
-    thumbnail: "/images/projects/mma-model.png",
+    thumbnail: "/images/projects/mma-model.svg",
     link: "/projects/mma-fight-model",
     linkType: "showcase",
     featured: true,

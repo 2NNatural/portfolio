@@ -39,3 +39,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# font packages — only the two woff2 variable fonts are used, ignore full packages
+public/fonts/*.zip
+public/fonts/cabinet-grotesk/
+public/fonts/satoshi/

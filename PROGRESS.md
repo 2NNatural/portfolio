@@ -2,6 +2,20 @@
 
 ---
 
+## Session 2 — March 21, 2026
+
+### Completed This Session
+
+- Production site confirmed live at `https://noahneriportfolio.vercel.app/`
+- Repository state confirmed synced to GitHub remote `origin/main`
+- Session docs updated to reflect live deployment status instead of pre-deploy state
+- Root metadata updated to use the live Vercel URL as the site base
+- Added framed hero headshot using a local asset in `public/images/headshots/`
+- Added custom local cover art for all 3 project cards in `public/images/projects/`
+- Ran `npm run build` successfully and verified production output
+
+---
+
 ## Session 1 — March 12, 2026
 
 ### Completed This Session
@@ -65,10 +79,10 @@
 
 | Feature | Status | Notes |
 |---------|--------|-------|
-| Hero section | ✅ Done | Animated canvas bg, name stagger, CTAs, social links |
+| Hero section | ✅ Done | Animated canvas bg, name stagger, CTAs, social links, framed headshot |
 | About / Skills bento | ✅ Done | 7 skills, bento grid layout |
 | Projects grid | ✅ Done | Data-driven, 3 seed projects |
-| Project thumbnails | ❌ Missing | 404 — needs real images in `public/images/projects/` |
+| Project thumbnails | ✅ Done | Local project cover art added for all 3 cards |
 | Resume timeline | ✅ Done | Updated from new PDF (Mar 2026) |
 | Resume PDF download | ✅ Done | Links to `public/Noah_Neri_resume.pdf` |
 | MMA showcase page | ✅ Done | Stats, bar chart, predictions table, methodology |
@@ -81,15 +95,14 @@
 | SEO / OG tags | ✅ Done | In root layout |
 | Framer Motion animations | ✅ Done | All scroll reveals, staggered cards, count-up stats |
 | `prefers-reduced-motion` | ✅ Done | All animations respect it |
-| `npm run build` | ❓ Untested | Dev server works; production build not verified |
-| GitHub push | ❌ Pending | Code uncommitted — see ROADMAP |
-| Vercel deploy | ❌ Pending | Blocked on GitHub push |
+| `npm run build` | ✅ Verified | Production build passes locally |
+| GitHub push | ✅ Done | Repo is connected to GitHub remote `origin/main` |
+| Vercel deploy | ✅ Live | Production URL: `https://noahneriportfolio.vercel.app/` |
 | Custom domain | ❌ Not started | — |
 
 ---
 
 ## Known Bugs / Issues
 
-- **Project thumbnail 404s** — `prediction-market.png`, `duolingo-campaign.png`, `mma-model.png` don't exist in `public/images/projects/`. Cards fall back to a letter placeholder. Not a bug, just missing assets.
-- **Production build untested** — `npm run build` has not been run. Dev server confirmed working on `localhost:3000`.
+- **MMA showcase data is still placeholder** — accuracy metrics and sample stats still need to be replaced with real model output.
 - **GPA discrepancy** — Original prompt said 3.28; resume PDF (March 2026) shows 3.34. Site uses 3.34 (correct value from PDF).

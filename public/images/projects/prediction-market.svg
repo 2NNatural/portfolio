@@ -1,0 +1,47 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#0A0A0A"/>
+  <rect x="32" y="32" width="1536" height="836" rx="34" fill="#101010" stroke="#1F1F1F"/>
+  <g opacity="0.25" stroke="#00E5A0" stroke-width="1">
+    <path d="M96 180H1504"/>
+    <path d="M96 320H1504"/>
+    <path d="M96 460H1504"/>
+    <path d="M96 600H1504"/>
+    <path d="M96 740H1504"/>
+    <path d="M280 120V780"/>
+    <path d="M560 120V780"/>
+    <path d="M840 120V780"/>
+    <path d="M1120 120V780"/>
+    <path d="M1400 120V780"/>
+  </g>
+  <rect x="116" y="116" width="240" height="668" rx="24" fill="#121212" stroke="#232323"/>
+  <rect x="404" y="148" width="1080" height="114" rx="28" fill="#121212" stroke="#232323"/>
+  <rect x="404" y="304" width="336" height="192" rx="28" fill="#141414" stroke="#232323"/>
+  <rect x="776" y="304" width="336" height="192" rx="28" fill="#141414" stroke="#232323"/>
+  <rect x="1148" y="304" width="336" height="192" rx="28" fill="#141414" stroke="#232323"/>
+  <rect x="404" y="534" width="1080" height="218" rx="28" fill="#121212" stroke="#232323"/>
+  <circle cx="236" cy="182" r="42" fill="#00E5A0" fill-opacity="0.16" stroke="#00E5A0"/>
+  <path d="M192 232C220 214 254 214 282 232" stroke="#00E5A0" stroke-width="8" stroke-linecap="round"/>
+  <rect x="176" y="300" width="120" height="16" rx="8" fill="#F5F5F5" fill-opacity="0.86"/>
+  <rect x="160" y="338" width="152" height="12" rx="6" fill="#525252"/>
+  <rect x="160" y="378" width="152" height="12" rx="6" fill="#525252"/>
+  <rect x="160" y="418" width="108" height="12" rx="6" fill="#525252"/>
+  <rect x="160" y="560" width="152" height="12" rx="6" fill="#525252"/>
+  <rect x="160" y="600" width="152" height="12" rx="6" fill="#525252"/>
+  <rect x="160" y="640" width="112" height="12" rx="6" fill="#525252"/>
+  <rect x="444" y="184" width="288" height="18" rx="9" fill="#F5F5F5"/>
+  <rect x="444" y="222" width="176" height="12" rx="6" fill="#5A5A5A"/>
+  <rect x="444" y="350" width="132" height="12" rx="6" fill="#F5F5F5"/>
+  <rect x="444" y="386" width="212" height="12" rx="6" fill="#5A5A5A"/>
+  <rect x="816" y="350" width="120" height="12" rx="6" fill="#F5F5F5"/>
+  <rect x="816" y="386" width="180" height="12" rx="6" fill="#5A5A5A"/>
+  <rect x="1188" y="350" width="164" height="12" rx="6" fill="#F5F5F5"/>
+  <rect x="1188" y="386" width="188" height="12" rx="6" fill="#5A5A5A"/>
+  <path d="M448 670L572 614L688 636L822 552L958 584L1104 490L1262 530L1440 428" stroke="#00E5A0" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="572" cy="614" r="10" fill="#00E5A0"/>
+  <circle cx="822" cy="552" r="10" fill="#00E5A0"/>
+  <circle cx="1104" cy="490" r="10" fill="#00E5A0"/>
+  <circle cx="1440" cy="428" r="10" fill="#00E5A0"/>
+  <text x="444" y="114" fill="#00E5A0" font-family="Arial, sans-serif" font-size="26" letter-spacing="8">MARKET MAP</text>
+  <text x="444" y="810" fill="#F5F5F5" font-family="Arial, sans-serif" font-size="62" font-weight="700">Prediction Market Directory</text>
+  <text x="444" y="852" fill="#7A7A7A" font-family="Arial, sans-serif" font-size="28">Multi-axis taxonomy engine for the application layer</text>
+</svg>

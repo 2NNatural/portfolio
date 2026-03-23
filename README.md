@@ -2,7 +2,7 @@
 
 > Personal portfolio site. Dark, technical, custom-built. Purpose: land employment by showcasing the ability to use AI tools to ship real projects fast.
 
-**Status:** Built. Uncommitted. Pending GitHub push → Vercel deploy.
+**Status:** Live on Vercel at [noahneriportfolio.vercel.app](https://noahneriportfolio.vercel.app/).
 
 ---
 
@@ -14,6 +14,8 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000).
+
+**Live site:** [https://noahneriportfolio.vercel.app/](https://noahneriportfolio.vercel.app/)
 
 ---
 
@@ -76,7 +78,10 @@ src/
 
 ## Deploy
 
-1. Commit all files
-2. Create GitHub repo at [github.com/new](https://github.com/new) (Public, no README init)
-3. `git remote add origin https://github.com/USERNAME/portfolio.git && git push -u origin main`
-4. Import at [vercel.com/import](https://vercel.com/import) — Next.js auto-detected, no config needed
+Current production URL: [https://noahneriportfolio.vercel.app/](https://noahneriportfolio.vercel.app/)
+
+Deployment workflow for future updates:
+
+1. Commit changes locally
+2. Push to `main`
+3. Vercel redeploys from the connected GitHub repo

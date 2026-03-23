@@ -1,0 +1,48 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#0A0A0A"/>
+  <rect x="32" y="32" width="1536" height="836" rx="34" fill="#101010" stroke="#1F1F1F"/>
+  <g opacity="0.22" stroke="#00E5A0" stroke-width="1">
+    <path d="M120 160H1480"/>
+    <path d="M120 300H1480"/>
+    <path d="M120 440H1480"/>
+    <path d="M120 580H1480"/>
+    <path d="M120 720H1480"/>
+    <path d="M220 96V804"/>
+    <path d="M500 96V804"/>
+    <path d="M780 96V804"/>
+    <path d="M1060 96V804"/>
+    <path d="M1340 96V804"/>
+  </g>
+  <rect x="128" y="128" width="480" height="644" rx="36" fill="#131313" stroke="#242424"/>
+  <rect x="660" y="128" width="812" height="220" rx="32" fill="#121212" stroke="#242424"/>
+  <rect x="660" y="388" width="384" height="384" rx="32" fill="#121212" stroke="#242424"/>
+  <rect x="1088" y="388" width="384" height="384" rx="32" fill="#121212" stroke="#242424"/>
+  <circle cx="368" cy="306" r="122" fill="#00E5A0" fill-opacity="0.14" stroke="#00E5A0" stroke-width="2"/>
+  <path d="M324 308C344 274 392 266 422 288C446 304 456 340 444 370C430 406 390 430 346 420C310 412 280 380 278 340" stroke="#00E5A0" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="338" cy="286" r="10" fill="#00E5A0"/>
+  <circle cx="406" cy="286" r="10" fill="#00E5A0"/>
+  <path d="M344 352C366 368 392 368 414 352" stroke="#00E5A0" stroke-width="10" stroke-linecap="round"/>
+  <rect x="220" y="500" width="296" height="18" rx="9" fill="#F5F5F5"/>
+  <rect x="220" y="544" width="220" height="14" rx="7" fill="#5C5C5C"/>
+  <rect x="220" y="584" width="260" height="14" rx="7" fill="#5C5C5C"/>
+  <rect x="220" y="624" width="172" height="14" rx="7" fill="#5C5C5C"/>
+  <path d="M740 216C850 132 1022 132 1132 216" stroke="#00E5A0" stroke-width="6" stroke-linecap="round" opacity="0.7"/>
+  <path d="M832 252L916 168L998 240L1086 152L1188 226" stroke="#F5F5F5" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="916" cy="168" r="10" fill="#00E5A0"/>
+  <circle cx="1086" cy="152" r="10" fill="#00E5A0"/>
+  <rect x="732" y="274" width="244" height="16" rx="8" fill="#5C5C5C"/>
+  <rect x="1120" y="274" width="220" height="16" rx="8" fill="#5C5C5C"/>
+  <circle cx="852" cy="540" r="72" fill="#00E5A0" fill-opacity="0.12" stroke="#00E5A0" stroke-width="2"/>
+  <path d="M822 536H884" stroke="#00E5A0" stroke-width="8" stroke-linecap="round"/>
+  <path d="M852 506V570" stroke="#00E5A0" stroke-width="8" stroke-linecap="round"/>
+  <rect x="742" y="652" width="220" height="14" rx="7" fill="#F5F5F5"/>
+  <rect x="742" y="690" width="180" height="12" rx="6" fill="#5C5C5C"/>
+  <circle cx="1280" cy="512" r="74" fill="#F5F5F5" fill-opacity="0.08" stroke="#F5F5F5" stroke-opacity="0.2"/>
+  <path d="M1246 544L1282 486L1320 544" stroke="#00E5A0" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M1260 520H1304" stroke="#00E5A0" stroke-width="8" stroke-linecap="round"/>
+  <rect x="1160" y="652" width="208" height="14" rx="7" fill="#F5F5F5"/>
+  <rect x="1160" y="690" width="246" height="12" rx="6" fill="#5C5C5C"/>
+  <text x="128" y="104" fill="#00E5A0" font-family="Arial, sans-serif" font-size="26" letter-spacing="8">CAMPAIGN SYSTEM</text>
+  <text x="128" y="834" fill="#F5F5F5" font-family="Arial, sans-serif" font-size="62" font-weight="700">DuoLingo Marketing Campaign</text>
+  <text x="128" y="874" fill="#7A7A7A" font-family="Arial, sans-serif" font-size="28">AI storyboarding, brand worldbuilding, and audience strategy</text>
+</svg>

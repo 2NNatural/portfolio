@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { useState } from "react";
 import { ExternalLink, ArrowRight } from "lucide-react";
 import { Project } from "@/types";
 import { cn } from "@/lib/utils";
@@ -14,6 +15,7 @@ interface ProjectCardProps {
 export default function ProjectCard({ project, featured }: ProjectCardProps) {
   const isExternal = project.linkType === "external";
   const isShowcase = project.linkType === "showcase";
+  const [imageError, setImageError] = useState(false);
 
   const CardContent = (
     <div
@@ -50,37 +52,56 @@ export default function ProjectCard({ project, featured }: ProjectCardProps) {
           src={project.thumbnail}
           alt={project.title}
           fill
+          unoptimized={project.thumbnail.endsWith(".svg")}
           className="object-cover transition-transform duration-500 group-hover:scale-105"
           onError={(e) => {
-            // Show placeholder if image doesn't exist
+            setImageError(true);
             const target = e.target as HTMLImageElement;
             target.style.display = "none";
           }}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
-        {/* Placeholder overlay when no image */}
         <div
-          className="absolute inset-0 flex items-center justify-center"
-          style={{ color: "var(--border-hover)" }}
+          className="absolute inset-0 pointer-events-none"
           aria-hidden="true"
-        >
-          <div className="text-center">
-            <div
-              className="text-4xl font-black mb-1"
-              style={{
-                fontFamily: "CabinetGrotesk, system-ui, sans-serif",
-                color: "var(--border-hover)",
-              }}
-            >
-              {project.title.charAt(0)}
+          style={{
+            background:
+              "linear-gradient(180deg, rgba(10,10,10,0.04) 0%, rgba(10,10,10,0.12) 62%, rgba(10,10,10,0.28) 100%)",
+          }}
+        />
+        <div
+          className="absolute inset-x-0 bottom-0 h-20 pointer-events-none"
+          aria-hidden="true"
+          style={{
+            background:
+              "linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,229,160,0.08) 100%)",
+          }}
+        />
+        {/* Placeholder overlay when no image */}
+        {imageError && (
+          <div
+            className="absolute inset-0 flex items-center justify-center"
+            style={{ color: "var(--border-hover)" }}
+            aria-hidden="true"
+          >
+            <div className="text-center">
+              <div
+                className="text-4xl font-black mb-1"
+                style={{
+                  fontFamily: "CabinetGrotesk, system-ui, sans-serif",
+                  color: "var(--border-hover)",
+                }}
+              >
+                {project.title.charAt(0)}
+              </div>
             </div>
           </div>
-        </div>
+        )}
 
         {/* Featured badge */}
         {featured && (
           <div
-            className="absolute top-3 left-3 px-2.5 py-1 text-xs font-semibold rounded-md"
+            className="absolute top-3 left-3 px-2.5 py-1 text-xs font-semibold rounded-md z-10"
             style={{
               backgroundColor: "var(--accent)",
               color: "#0a0a0a",

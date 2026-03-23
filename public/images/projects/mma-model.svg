@@ -1,0 +1,58 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#0A0A0A"/>
+  <rect x="32" y="32" width="1536" height="836" rx="34" fill="#101010" stroke="#1F1F1F"/>
+  <g opacity="0.18" stroke="#00E5A0" stroke-width="1">
+    <path d="M96 170H1504"/>
+    <path d="M96 330H1504"/>
+    <path d="M96 490H1504"/>
+    <path d="M96 650H1504"/>
+    <path d="M96 810H1504"/>
+    <path d="M280 96V804"/>
+    <path d="M560 96V804"/>
+    <path d="M840 96V804"/>
+    <path d="M1120 96V804"/>
+    <path d="M1400 96V804"/>
+  </g>
+  <rect x="124" y="124" width="432" height="652" rx="32" fill="#121212" stroke="#242424"/>
+  <rect x="612" y="124" width="860" height="180" rx="32" fill="#121212" stroke="#242424"/>
+  <rect x="612" y="346" width="412" height="430" rx="32" fill="#121212" stroke="#242424"/>
+  <rect x="1060" y="346" width="412" height="430" rx="32" fill="#121212" stroke="#242424"/>
+  <path d="M340 190L456 258V392L340 460L224 392V258L340 190Z" fill="#00E5A0" fill-opacity="0.1" stroke="#00E5A0" stroke-width="3"/>
+  <path d="M274 326H406" stroke="#00E5A0" stroke-width="10" stroke-linecap="round"/>
+  <path d="M340 260V392" stroke="#00E5A0" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="340" cy="326" r="22" fill="#00E5A0"/>
+  <text x="200" y="582" fill="#00E5A0" font-family="Arial, sans-serif" font-size="28" letter-spacing="8">MODEL EDGE</text>
+  <text x="200" y="664" fill="#F5F5F5" font-family="Arial, sans-serif" font-size="112" font-weight="700">72.4%</text>
+  <text x="200" y="716" fill="#7A7A7A" font-family="Arial, sans-serif" font-size="30">Out-of-sample win accuracy</text>
+  <path d="M660 238H1418" stroke="#00E5A0" stroke-width="2" stroke-dasharray="8 10" opacity="0.6"/>
+  <rect x="660" y="176" width="172" height="18" rx="9" fill="#F5F5F5"/>
+  <rect x="874" y="176" width="220" height="18" rx="9" fill="#5C5C5C"/>
+  <rect x="1138" y="176" width="138" height="18" rx="9" fill="#5C5C5C"/>
+  <path d="M660 256L762 232L884 244L1006 198L1140 212L1256 166L1418 140" stroke="#00E5A0" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="1006" cy="198" r="9" fill="#00E5A0"/>
+  <circle cx="1256" cy="166" r="9" fill="#00E5A0"/>
+  <rect x="668" y="404" width="112" height="14" rx="7" fill="#F5F5F5"/>
+  <rect x="668" y="452" width="248" height="20" rx="10" fill="#202020"/>
+  <rect x="668" y="452" width="194" height="20" rx="10" fill="#00E5A0"/>
+  <rect x="668" y="516" width="140" height="14" rx="7" fill="#F5F5F5"/>
+  <rect x="668" y="564" width="248" height="20" rx="10" fill="#202020"/>
+  <rect x="668" y="564" width="176" height="20" rx="10" fill="#00E5A0"/>
+  <rect x="668" y="628" width="120" height="14" rx="7" fill="#F5F5F5"/>
+  <rect x="668" y="676" width="248" height="20" rx="10" fill="#202020"/>
+  <rect x="668" y="676" width="206" height="20" rx="10" fill="#00E5A0"/>
+  <rect x="1116" y="420" width="300" height="24" rx="12" fill="#1B1B1B" stroke="#2B2B2B"/>
+  <rect x="1116" y="476" width="300" height="24" rx="12" fill="#1B1B1B" stroke="#2B2B2B"/>
+  <rect x="1116" y="532" width="300" height="24" rx="12" fill="#1B1B1B" stroke="#2B2B2B"/>
+  <rect x="1116" y="588" width="300" height="24" rx="12" fill="#1B1B1B" stroke="#2B2B2B"/>
+  <text x="1160" y="438" fill="#F5F5F5" font-family="Arial, sans-serif" font-size="28" font-weight="700">Middleweight</text>
+  <text x="1160" y="494" fill="#F5F5F5" font-family="Arial, sans-serif" font-size="28" font-weight="700">Lightweight</text>
+  <text x="1160" y="550" fill="#F5F5F5" font-family="Arial, sans-serif" font-size="28" font-weight="700">Welterweight</text>
+  <text x="1160" y="606" fill="#F5F5F5" font-family="Arial, sans-serif" font-size="28" font-weight="700">Featherweight</text>
+  <text x="1380" y="438" fill="#00E5A0" font-family="Arial, sans-serif" font-size="28" font-weight="700" text-anchor="end">78.6%</text>
+  <text x="1380" y="494" fill="#00E5A0" font-family="Arial, sans-serif" font-size="28" font-weight="700" text-anchor="end">75.8%</text>
+  <text x="1380" y="550" fill="#00E5A0" font-family="Arial, sans-serif" font-size="28" font-weight="700" text-anchor="end">73.1%</text>
+  <text x="1380" y="606" fill="#00E5A0" font-family="Arial, sans-serif" font-size="28" font-weight="700" text-anchor="end">71.4%</text>
+  <text x="124" y="104" fill="#00E5A0" font-family="Arial, sans-serif" font-size="26" letter-spacing="8">SPORTS ANALYTICS</text>
+  <text x="612" y="834" fill="#F5F5F5" font-family="Arial, sans-serif" font-size="62" font-weight="700">MMA Fight Prediction Model</text>
+  <text x="612" y="874" fill="#7A7A7A" font-family="Arial, sans-serif" font-size="28">Private model showcase for live UFC betting and licensing</text>
+</svg>

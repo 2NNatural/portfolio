@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://noahneri.com"),
+  metadataBase: new URL("https://noahneriportfolio.vercel.app"),
   title: "Noah Neri — AI Developer & Builder",
   description:
     "USC Business student shipping AI-powered products fast. Agent orchestration, vibe coding, full-stack development.",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://noahneri.com",
+    url: "https://noahneriportfolio.vercel.app",
     siteName: "Noah Neri",
     title: "Noah Neri — AI Developer & Builder",
     description:
