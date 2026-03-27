@@ -13,21 +13,21 @@ export const PROJECTS: Project[] = [
     description:
       "A comprehensive directory mapping the prediction market ecosystem across 5 dimensions. Built with AI-assisted development — Next.js, Supabase, and a custom multi-axis taxonomy engine.",
     tags: ["AI Development", "Web3", "Vibe Coding", "Next.js"],
-    thumbnail: "/images/projects/prediction-market.svg",
+    thumbnail: "/images/projects/prediction-market.jpg",
     link: "https://prediction-market-directory.vercel.app/",
     linkType: "external",
     featured: true,
   },
   {
-    id: "duolingo-campaign",
-    title: "DuoLingo Marketing Campaign",
+    id: "blockchain-usc-website",
+    title: "Blockchain at USC — Website Revamp",
     description:
-      "A full marketing campaign pitch for DuoLingo — AI-powered storyboarding, cohesive brand design using Nano Banana, and data-driven targeting strategy.",
-    tags: ["AI Media & Design", "Marketing", "Brand Strategy"],
-    thumbnail: "/images/projects/duolingo-campaign.svg",
-    link: "https://docs.google.com/presentation/d/18GtXHATSaxgdtmFoto0gN84mt3Hc3O-4/edit?slide=id.p6#slide=id.p6",
+      "Full redesign and rebuild of the official site for USC's premier blockchain org. UI designed with Google Stitch + Variant; codebase built from scratch using Claude Code. Next.js, TypeScript, Tailwind.",
+    tags: ["Claude Code", "AI Development", "Next.js", "UI Design"],
+    thumbnail: "/images/projects/blockchain-usc.jpg",
+    link: "https://www.blockchainatusc.com",
     linkType: "external",
-    featured: false,
+    featured: true,
   },
   {
     id: "mma-fight-model",
@@ -35,9 +35,9 @@ export const PROJECTS: Project[] = [
     description:
       "A proprietary ML model predicting UFC fight outcomes. Select accuracy metrics and sample predictions are showcased — the model itself is private, used for live betting and future paywall.",
     tags: ["Machine Learning", "Data Science", "Sports Analytics"],
-    thumbnail: "/images/projects/mma-model.svg",
-    link: "/projects/mma-fight-model",
-    linkType: "showcase",
+    thumbnail: "/images/projects/mma-model.jpg",
+    link: "https://2nattypicks.vercel.app/",
+    linkType: "external",
     featured: true,
   },
 ];

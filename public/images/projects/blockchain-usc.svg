@@ -1,0 +1,131 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#0A0A0A"/>
+  <rect x="32" y="32" width="1536" height="836" rx="34" fill="#101010" stroke="#1F1F1F"/>
+  <g opacity="0.13" stroke="#00E5A0" stroke-width="1">
+    <path d="M96 180H1504"/>
+    <path d="M96 320H1504"/>
+    <path d="M96 460H1504"/>
+    <path d="M96 600H1504"/>
+    <path d="M96 740H1504"/>
+    <path d="M280 120V780"/>
+    <path d="M560 120V780"/>
+    <path d="M840 120V780"/>
+    <path d="M1120 120V780"/>
+    <path d="M1400 120V780"/>
+  </g>
+
+  <!-- Left panel: simplified website wireframe -->
+  <rect x="124" y="124" width="464" height="644" rx="32" fill="#121212" stroke="#242424"/>
+  <!-- Nav bar -->
+  <rect x="148" y="152" width="416" height="44" rx="10" fill="#181818" stroke="#282828"/>
+  <circle cx="176" cy="174" r="9" fill="#CC0000"/>
+  <rect x="210" y="169" width="52" height="10" rx="5" fill="#303030"/>
+  <rect x="278" y="169" width="44" height="10" rx="5" fill="#303030"/>
+  <rect x="338" y="169" width="56" height="10" rx="5" fill="#303030"/>
+  <rect x="504" y="165" width="44" height="18" rx="7" fill="#CC0000" fill-opacity="0.85"/>
+  <!-- Hero block -->
+  <rect x="148" y="212" width="416" height="164" rx="12" fill="#141414" stroke="#242424"/>
+  <rect x="168" y="232" width="96" height="14" rx="4" fill="#CC0000" fill-opacity="0.18" stroke="#CC0000" stroke-opacity="0.5"/>
+  <rect x="168" y="260" width="340" height="18" rx="9" fill="#F5F5F5" fill-opacity="0.88"/>
+  <rect x="168" y="290" width="272" height="18" rx="9" fill="#F5F5F5" fill-opacity="0.88"/>
+  <rect x="168" y="320" width="220" height="12" rx="6" fill="#4A4A4A"/>
+  <rect x="168" y="348" width="108" height="22" rx="9" fill="#CC0000"/>
+  <!-- Card row -->
+  <rect x="148" y="392" width="196" height="120" rx="12" fill="#161616" stroke="#242424"/>
+  <rect x="360" y="392" width="200" height="120" rx="12" fill="#161616" stroke="#242424"/>
+  <rect x="168" y="410" width="76" height="11" rx="5" fill="#CC0000" fill-opacity="0.28"/>
+  <rect x="168" y="434" width="152" height="9" rx="4" fill="#383838"/>
+  <rect x="168" y="454" width="136" height="9" rx="4" fill="#383838"/>
+  <rect x="168" y="478" width="64" height="18" rx="7" fill="#242424" stroke="#CC0000" stroke-opacity="0.5"/>
+  <rect x="380" y="410" width="76" height="11" rx="5" fill="#CC0000" fill-opacity="0.28"/>
+  <rect x="380" y="434" width="148" height="9" rx="4" fill="#383838"/>
+  <rect x="380" y="454" width="128" height="9" rx="4" fill="#383838"/>
+  <rect x="380" y="478" width="64" height="18" rx="7" fill="#242424" stroke="#CC0000" stroke-opacity="0.5"/>
+  <!-- Team strip -->
+  <rect x="148" y="528" width="416" height="84" rx="12" fill="#161616" stroke="#242424"/>
+  <circle cx="196" cy="570" r="24" fill="#1E1E1E" stroke="#CC0000" stroke-opacity="0.55"/>
+  <circle cx="256" cy="570" r="24" fill="#1E1E1E" stroke="#2A2A2A"/>
+  <circle cx="316" cy="570" r="24" fill="#1E1E1E" stroke="#2A2A2A"/>
+  <circle cx="376" cy="570" r="24" fill="#1E1E1E" stroke="#2A2A2A"/>
+  <circle cx="436" cy="570" r="24" fill="#1E1E1E" stroke="#2A2A2A"/>
+  <!-- Footer strip -->
+  <rect x="148" y="628" width="416" height="28" rx="8" fill="#141414" stroke="#242424"/>
+  <rect x="168" y="638" width="80" height="8" rx="4" fill="#303030"/>
+  <rect x="440" y="638" width="48" height="8" rx="4" fill="#303030"/>
+
+  <!-- Right top panel: build context -->
+  <rect x="640" y="124" width="892" height="196" rx="32" fill="#121212" stroke="#242424"/>
+  <!-- Stack pills -->
+  <rect x="678" y="160" width="148" height="30" rx="9" fill="#CC0000" fill-opacity="0.12" stroke="#CC0000" stroke-opacity="0.45"/>
+  <text x="752" y="181" fill="#CC0000" font-family="Arial, sans-serif" font-size="21" font-weight="700" text-anchor="middle">Claude Code</text>
+  <rect x="842" y="160" width="100" height="30" rx="9" fill="#1E1E1E" stroke="#2E2E2E"/>
+  <text x="892" y="181" fill="#A0A0A0" font-family="Arial, sans-serif" font-size="21" text-anchor="middle">Next.js</text>
+  <rect x="958" y="160" width="122" height="30" rx="9" fill="#1E1E1E" stroke="#2E2E2E"/>
+  <text x="1019" y="181" fill="#A0A0A0" font-family="Arial, sans-serif" font-size="21" text-anchor="middle">TypeScript</text>
+  <rect x="1096" y="160" width="104" height="30" rx="9" fill="#1E1E1E" stroke="#2E2E2E"/>
+  <text x="1148" y="181" fill="#A0A0A0" font-family="Arial, sans-serif" font-size="21" text-anchor="middle">Tailwind</text>
+  <rect x="1216" y="160" width="96" height="30" rx="9" fill="#00E5A0" fill-opacity="0.1" stroke="#00E5A0" stroke-opacity="0.4"/>
+  <text x="1264" y="181" fill="#00E5A0" font-family="Arial, sans-serif" font-size="21" text-anchor="middle">Live</text>
+  <path d="M678 210H1492" stroke="#2A2A2A" stroke-width="1"/>
+  <!-- Metrics -->
+  <text x="700" y="260" fill="#F5F5F5" font-family="Arial, sans-serif" font-size="36" font-weight="700">0 → v1.0</text>
+  <text x="700" y="292" fill="#505050" font-family="Arial, sans-serif" font-size="20">built from scratch</text>
+  <text x="1000" y="260" fill="#F5F5F5" font-family="Arial, sans-serif" font-size="36" font-weight="700">Stitch + Variant</text>
+  <text x="1000" y="292" fill="#505050" font-family="Arial, sans-serif" font-size="20">UI design workflow</text>
+
+  <!-- Right bottom panel: blockchain node network -->
+  <rect x="640" y="364" width="892" height="408" rx="32" fill="#121212" stroke="#242424"/>
+
+  <!-- Node network — centered at ~1280, 568 -->
+  <!-- Outer glow ring -->
+  <circle cx="1280" cy="568" r="96" fill="#CC0000" fill-opacity="0.04" stroke="#CC0000" stroke-opacity="0.12" stroke-width="1" stroke-dasharray="6 8"/>
+  <!-- Center node -->
+  <circle cx="1280" cy="568" r="38" fill="#CC0000" fill-opacity="0.14" stroke="#CC0000" stroke-width="2"/>
+  <circle cx="1280" cy="568" r="18" fill="#CC0000"/>
+  <!-- Inner ring 6 nodes (hexagonal) -->
+  <line x1="1280" y1="530" x2="1280" y2="484" stroke="#CC0000" stroke-width="2" stroke-opacity="0.75"/>
+  <circle cx="1280" cy="472" r="18" fill="#1C1C1C" stroke="#CC0000" stroke-opacity="0.65" stroke-width="1.5"/>
+  <line x1="1313" y1="549" x2="1352" y2="527" stroke="#CC0000" stroke-width="2" stroke-opacity="0.75"/>
+  <circle cx="1364" cy="520" r="18" fill="#1C1C1C" stroke="#CC0000" stroke-opacity="0.65" stroke-width="1.5"/>
+  <line x1="1313" y1="587" x2="1352" y2="609" stroke="#CC0000" stroke-width="2" stroke-opacity="0.75"/>
+  <circle cx="1364" cy="616" r="18" fill="#1C1C1C" stroke="#CC0000" stroke-opacity="0.65" stroke-width="1.5"/>
+  <line x1="1280" y1="606" x2="1280" y2="652" stroke="#CC0000" stroke-width="2" stroke-opacity="0.75"/>
+  <circle cx="1280" cy="664" r="18" fill="#1C1C1C" stroke="#CC0000" stroke-opacity="0.65" stroke-width="1.5"/>
+  <line x1="1247" y1="587" x2="1208" y2="609" stroke="#CC0000" stroke-width="2" stroke-opacity="0.75"/>
+  <circle cx="1196" cy="616" r="18" fill="#1C1C1C" stroke="#CC0000" stroke-opacity="0.65" stroke-width="1.5"/>
+  <line x1="1247" y1="549" x2="1208" y2="527" stroke="#CC0000" stroke-width="2" stroke-opacity="0.75"/>
+  <circle cx="1196" cy="520" r="18" fill="#1C1C1C" stroke="#CC0000" stroke-opacity="0.65" stroke-width="1.5"/>
+  <!-- Outer ring nodes (faint) -->
+  <line x1="1280" y1="454" x2="1280" y2="424" stroke="#CC0000" stroke-width="1" stroke-opacity="0.28"/>
+  <circle cx="1280" cy="412" r="11" fill="#181818" stroke="#CC0000" stroke-opacity="0.3"/>
+  <line x1="1375" y1="509" x2="1404" y2="494" stroke="#CC0000" stroke-width="1" stroke-opacity="0.28"/>
+  <circle cx="1414" cy="488" r="11" fill="#181818" stroke="#CC0000" stroke-opacity="0.3"/>
+  <line x1="1375" y1="627" x2="1404" y2="642" stroke="#CC0000" stroke-width="1" stroke-opacity="0.28"/>
+  <circle cx="1414" cy="648" r="11" fill="#181818" stroke="#CC0000" stroke-opacity="0.3"/>
+  <line x1="1280" y1="682" x2="1280" y2="712" stroke="#CC0000" stroke-width="1" stroke-opacity="0.28"/>
+  <circle cx="1280" cy="724" r="11" fill="#181818" stroke="#CC0000" stroke-opacity="0.3"/>
+  <line x1="1185" y1="627" x2="1156" y2="642" stroke="#CC0000" stroke-width="1" stroke-opacity="0.28"/>
+  <circle cx="1146" cy="648" r="11" fill="#181818" stroke="#CC0000" stroke-opacity="0.3"/>
+  <line x1="1185" y1="509" x2="1156" y2="494" stroke="#CC0000" stroke-width="1" stroke-opacity="0.28"/>
+  <circle cx="1146" cy="488" r="11" fill="#181818" stroke="#CC0000" stroke-opacity="0.3"/>
+
+  <!-- Left text block inside bottom panel -->
+  <text x="680" y="436" fill="#CC0000" font-family="Arial, sans-serif" font-size="22" letter-spacing="7" font-weight="600">BLOCKCHAIN</text>
+  <text x="680" y="508" fill="#F5F5F5" font-family="Arial, sans-serif" font-size="80" font-weight="700">USC</text>
+  <rect x="680" y="522" width="152" height="4" rx="2" fill="#CC0000"/>
+  <text x="680" y="564" fill="#6A6A6A" font-family="Arial, sans-serif" font-size="24">President · Builder</text>
+  <!-- Stat boxes -->
+  <rect x="680" y="590" width="136" height="68" rx="12" fill="#161616" stroke="#242424"/>
+  <text x="748" y="622" fill="#F5F5F5" font-family="Arial, sans-serif" font-size="28" font-weight="700" text-anchor="middle">$10M+</text>
+  <text x="748" y="648" fill="#505050" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">delegations</text>
+  <rect x="832" y="590" width="108" height="68" rx="12" fill="#161616" stroke="#242424"/>
+  <text x="886" y="622" fill="#00E5A0" font-family="Arial, sans-serif" font-size="28" font-weight="700" text-anchor="middle">Live</text>
+  <text x="886" y="648" fill="#505050" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">production</text>
+
+  <!-- Category label top-left -->
+  <text x="124" y="104" fill="#CC0000" font-family="Arial, sans-serif" font-size="24" letter-spacing="7">WEB3 / CLAUDE CODE</text>
+
+  <!-- Bottom title area -->
+  <text x="640" y="830" fill="#F5F5F5" font-family="Arial, sans-serif" font-size="54" font-weight="700">Blockchain at USC — Website Revamp</text>
+  <text x="640" y="872" fill="#6A6A6A" font-family="Arial, sans-serif" font-size="26">Designed with Google Stitch · Built from scratch with Claude Code</text>
+</svg>

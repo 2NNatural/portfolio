@@ -6,7 +6,7 @@
 
 - **Live site:** [https://noahneriportfolio.vercel.app/](https://noahneriportfolio.vercel.app/)
 - **Who it's for:** employers, collaborators, and anyone evaluating Noah as a builder
-- **What it does:** showcases shipped work, resume, contact info, and a dedicated MMA model sub-page
+- **What it does:** showcases shipped work, resume, contact info, and project case studies
 
 ## Quick Start
 

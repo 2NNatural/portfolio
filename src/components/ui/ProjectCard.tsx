@@ -52,7 +52,7 @@ export default function ProjectCard({ project, featured }: ProjectCardProps) {
           src={project.thumbnail}
           alt={project.title}
           fill
-          unoptimized={project.thumbnail.endsWith(".svg")}
+          unoptimized={false}
           className="object-cover transition-transform duration-500 group-hover:scale-105"
           onError={(e) => {
             setImageError(true);

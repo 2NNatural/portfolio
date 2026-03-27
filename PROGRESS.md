@@ -2,6 +2,56 @@
 
 ---
 
+## 2026-03-26 — Session 4
+
+### Completed This Session
+
+**Project card replacement: Duolingo → Blockchain at USC**
+- Removed the `duolingo-campaign` project object from `src/data/projects.ts`
+- Added `blockchain-usc-website` in its place:
+  - Title: "Blockchain at USC — Website Revamp"
+  - Description calls out Google Stitch + Variant for UI design and Claude Code for the build
+  - Tags: `Claude Code`, `AI Development`, `Next.js`, `UI Design`
+  - Links to `https://www.blockchainatusc.com`, `linkType: "external"`, `featured: true`
+- Created `public/images/projects/blockchain-usc.svg` as cover art (subsequently replaced by a live screenshot — now a dead asset)
+
+**MMA model link update**
+- Changed `linkType` from `"showcase"` → `"external"`
+- Changed `link` from `"/projects/mma-fight-model"` → `"https://2nattypicks.vercel.app/"`
+- The internal showcase page at `src/app/projects/mma-fight-model/page.tsx` is now orphaned (still exists, not linked)
+
+**Live site screenshots for all project thumbnails**
+- Took Playwright screenshots of all 3 live sites at `1600×900`, JPEG quality 90:
+  - `prediction-market.jpg` (141 KB) — `https://prediction-market-directory.vercel.app/`
+  - `blockchain-usc.jpg` (117 KB) — `https://www.blockchainatusc.com`
+  - `mma-model.jpg` (41 KB) — `https://2nattypicks.vercel.app/`
+- Updated all `thumbnail` paths in `src/data/projects.ts` from `.svg` → `.jpg`
+- All 3 previous SVG cover assets are now dead (`prediction-market.svg`, `duolingo-campaign.svg`, `mma-model.svg`, `blockchain-usc.svg`)
+
+**ProjectCard.tsx fix**
+- Changed `unoptimized={project.thumbnail.endsWith(".svg")}` → `unoptimized={false}`
+- All thumbnails are now JPEG and go through Next.js image optimization normally
+
+**Documentation rewrite**
+- Rewrote `README.md`, `CONTEXT.md`, `PROGRESS.md`, `ROADMAP.md` to reflect Session 4 state
+
+### Implementation Decisions Made This Session
+
+- **Replace vs. add:** Noah explicitly chose to replace Duolingo (not add a 4th card). Rationale: the Blockchain rebuild is a stronger "I ship product" signal than a marketing pitch deck.
+- **External link for MMA model:** The project card now links to the live picks site rather than the internal showcase page — the showcase page becomes an orphan.
+- **Live screenshots over custom SVGs:** Actual site previews are more compelling than generated artwork; Playwright at 1600×900 gives clean above-the-fold captures.
+
+### Trade-Offs Accepted This Session
+
+- The old SVG cover art assets remain on disk as dead files (intentional — no cleanup needed right now)
+- The MMA showcase sub-page at `/projects/mma-fight-model` is still in the codebase but no longer reachable from the main navigation
+
+### Not Yet Pushed
+
+- Session 4 changes are uncommitted as of the doc rewrite. Need to commit and push to `main` before the next session.
+
+---
+
 ## 2026-03-23 — Session 3
 
 ### Completed This Session
@@ -17,38 +67,19 @@
   - `public/images/projects/prediction-market.svg`
   - `public/images/projects/duolingo-campaign.svg`
   - `public/images/projects/mma-model.svg`
-- Updated `src/data/projects.ts` so all 3 project cards now point to real local assets instead of missing thumbnails
+- Updated `src/data/projects.ts` so all 3 project cards pointed to real local assets
 - Updated `src/components/ui/ProjectCard.tsx` so the gray fallback letters only show on actual image failure
 - Removed the visible gray `P`, `D`, and `M` watermarks once real images existed
 
 **Live site + metadata**
-- Updated `README.md`, `CONTEXT.md`, `PROGRESS.md`, and `ROADMAP.md` to reflect that the site is live at `https://noahneriportfolio.vercel.app/`
 - Updated `src/app/layout.tsx` so `metadataBase` and `openGraph.url` use `https://noahneriportfolio.vercel.app/`
 
 **Verification**
-- Ran `npm run build`
-- Initial sandboxed build failed with a Turbopack environment panic caused by `Operation not permitted` while binding a port during CSS processing
-- Reran `npm run build` outside the sandbox and the production build passed successfully
+- `npm run build` passed outside sandbox after a Turbopack port-binding panic in the sandboxed environment (treated as environment limitation, not a code regression)
 
 **Git / deploy**
-- Committed the imagery refresh as `f9ed6d2 Add live site imagery refresh`
-- Pushed `main` to `https://github.com/2NNatural/portfolio`
-
-**Documentation**
-- Rewrote `README.md`, `CONTEXT.md`, `PROGRESS.md`, and `ROADMAP.md` to be the current single source of truth
-- Consolidated next steps into one canonical roadmap file
-
-### Implementation Decisions Made This Session
-
-- Used a real local headshot file for the hero instead of a placeholder frame
-- Used custom SVG project cover art for the 3 project cards so the visuals stay cohesive with the site’s dark neon aesthetic
-- Kept the project card fallback-letter behavior in code, but only as a true failure fallback
-- Treated the sandbox build panic as an environment issue, not a code regression, because the unrestricted build passed cleanly
-
-### Trade-Offs Accepted This Session
-
-- Custom SVG project cover art was used instead of raw live screenshots to keep the cards visually consistent and production-ready
-- The repo still contains an untracked root source image, `IMG_3427 - Noah Neri.jpeg`, because only the copied `public/` asset is required by the app
+- Committed as `f9ed6d2 Add live site imagery refresh`
+- Pushed `main` to GitHub
 
 ---
 
@@ -58,13 +89,8 @@
 
 - Production site confirmed live at `https://noahneriportfolio.vercel.app/`
 - Repository state confirmed synced to GitHub remote `origin/main`
-- Session docs updated to reflect live deployment status instead of pre-deploy state
-- Root metadata update was planned around the live Vercel URL
-
-### Notes
-
-- This session established the live-site direction and the imagery refresh plan.
-- Final imagery implementation, build verification, and GitHub push landed on 2026-03-23.
+- Session docs updated to reflect live deployment status
+- Root metadata update planned around the live Vercel URL; implemented on 2026-03-23
 
 ---
 
@@ -73,63 +99,40 @@
 ### Completed This Session
 
 **Foundation**
-- Scaffolded Next.js `16.1.6` project with TypeScript, Tailwind v4, ESLint, App Router, and `src/` directory
-- Installed `framer-motion`, `clsx`, `tailwind-merge`, and `lucide-react`
-- Configured `globals.css` with Tailwind v4 imports, CSS custom properties for dark/light theme, and dot grid background texture
-- Added `src/lib/utils.ts` with `cn()` helper
-- Added `src/lib/fonts.ts` with `next/font/local` for Cabinet Grotesk + Satoshi
-- Added `src/types/index.ts` with `Project`, `ResumeEntry`, `ResumeSection`, `Skill`, `MMAShowcaseData`, `WeightClassBreakdown`, and `SamplePrediction`
-- Added `src/app/layout.tsx` with root metadata, Open Graph tags, and dark theme default
+- Scaffolded Next.js `16.1.6` with TypeScript, Tailwind v4, ESLint, App Router, `src/` directory
+- Installed `framer-motion`, `clsx`, `tailwind-merge`, `lucide-react`
+- Configured `globals.css` with Tailwind v4 imports, CSS custom properties for dark/light theme, dot grid background texture
+- `src/lib/utils.ts` — `cn()` helper
+- `src/lib/fonts.ts` — `next/font/local` for Cabinet Grotesk + Satoshi
+- `src/types/index.ts` — `Project`, `ResumeEntry`, `ResumeSection`, `Skill`, `MMAShowcaseData`, `WeightClassBreakdown`, `SamplePrediction`
+- `src/app/layout.tsx` — root metadata, Open Graph tags, dark theme default
 - Downloaded and self-hosted Cabinet Grotesk + Satoshi fonts in `public/fonts/`
 - Copied resume PDF to `public/Noah_Neri_resume.pdf`
 
 **Data files**
-- Added `src/data/projects.ts` with 3 seed projects
-- Added `src/data/resume-data.ts` with structured resume content
-- Added `src/data/mma-showcase-data.ts` with placeholder MMA stats, sample predictions, methodology copy, and weight class breakdown
-- Added `src/data/skills-data.ts` with 7 skills and bento size hints
+- `src/data/projects.ts` — 3 seed projects
+- `src/data/resume-data.ts` — structured resume content
+- `src/data/mma-showcase-data.ts` — placeholder MMA stats, sample predictions, methodology, weight class breakdown
+- `src/data/skills-data.ts` — 7 skills with bento size hints
 
 **UI primitives**
-- Added `src/components/ui/ScrollReveal.tsx`
-- Added `src/components/ui/SectionHeading.tsx`
-- Added `src/components/ui/ProjectCard.tsx`
-- Added `src/components/ui/SkillTag.tsx`
-- Added `src/components/ui/TimelineItem.tsx`
-- Added `src/components/ui/StatsCard.tsx`
+- `ScrollReveal.tsx`, `SectionHeading.tsx`, `ProjectCard.tsx`, `SkillTag.tsx`, `TimelineItem.tsx`, `StatsCard.tsx`
 
 **Layout**
-- Added `src/components/layout/Navbar.tsx`
-- Added `src/components/layout/Footer.tsx`
-- Added `src/components/layout/ThemeToggle.tsx`
+- `Navbar.tsx`, `Footer.tsx`, `ThemeToggle.tsx`
 
 **Sections**
-- Added `src/components/sections/Hero.tsx`
-- Added `src/components/sections/About.tsx`
-- Added `src/components/sections/Projects.tsx`
-- Added `src/components/sections/Resume.tsx`
-- Added `src/components/sections/Contact.tsx`
+- `Hero.tsx`, `About.tsx`, `Projects.tsx`, `Resume.tsx`, `Contact.tsx`
 
 **Hero background**
-- Added `src/components/hero/MeshGradientCanvas.tsx` with animated Canvas 2D mesh gradient, 30fps throttle, and reduced-motion fallback
+- `MeshGradientCanvas.tsx` — animated Canvas 2D mesh gradient, 30fps throttle, reduced-motion fallback
 
 **Hooks**
-- Added `src/hooks/useActiveSection.ts`
+- `useActiveSection.ts`
 
 **Pages**
-- Added `src/app/page.tsx`
-- Added `src/app/projects/mma-fight-model/page.tsx`
-
-**Docs**
-- Added initial versions of `README.md`, `CONTEXT.md`, `PROGRESS.md`, and `ROADMAP.md`
-
-### Key Decisions Captured in Session 1
-
-- Main site is single-page scroll
-- MMA project gets its own showcase route
-- Accent color is neon green `#00E5A0`
-- Hero background uses Canvas 2D, not Three.js/WebGL
-- Fonts are self-hosted via `next/font/local`
-- All content lives in `/src/data/`
+- `src/app/page.tsx`
+- `src/app/projects/mma-fight-model/page.tsx`
 
 ---
 
@@ -140,24 +143,26 @@
 | Hero section | ✅ Done | Animated canvas bg, name stagger, CTAs, social links, framed headshot |
 | Hero frame cleanup | ✅ Done | Removed `Operating Mode` / `shipping product fast` panel |
 | About / Skills bento | ✅ Done | 7 skills, bento grid layout |
-| Projects grid | ✅ Done | Data-driven, 3 seeded projects |
-| Project thumbnails | ✅ Done | Local SVG cover art added for all 3 cards |
-| Project card watermark cleanup | ✅ Done | Gray `P`, `D`, `M` overlays removed for working assets |
+| Projects grid | ✅ Done | Data-driven, 3 projects |
+| Project thumbnails | ✅ Done | Live site screenshots (JPEG) for all 3 cards |
+| Project card watermark cleanup | ✅ Done | Gray fallback letters only show on broken image |
+| Blockchain at USC card | ✅ Done | Replaced DuoLingo; links to live site |
+| MMA model → external link | ✅ Done | Now links to `https://2nattypicks.vercel.app/` |
 | Resume timeline | ✅ Done | Updated from March 2026 PDF |
 | Resume PDF download | ✅ Done | Links to `public/Noah_Neri_resume.pdf` |
-| MMA showcase page | ✅ Done | Stats, bar chart, predictions table, methodology |
-| MMA real data | ❌ Placeholder | Current values in `src/data/mma-showcase-data.ts` are not real model output yet |
+| MMA showcase sub-page | ⚠️ Orphaned | `/projects/mma-fight-model` still exists, not linked from card |
+| MMA real data | ❌ Placeholder | Values in `src/data/mma-showcase-data.ts` are not real model output |
 | Contact section | ✅ Done | Email, phone, LinkedIn pills |
-| Navbar + mobile nav | ✅ Done | Hamburger drawer and active-section highlighting |
+| Navbar + mobile nav | ✅ Done | Hamburger drawer, active-section highlighting |
 | Footer | ✅ Done | Social links and copyright |
 | Dark/light toggle | ✅ Done | Persists to `localStorage` |
 | Responsive layout | ✅ Done | Mobile, tablet, desktop |
-| SEO / OG tags | ✅ Done | Root metadata present and live URL updated |
-| Custom OG image | ❌ Missing | `/og-image.png` still needs a real asset |
+| SEO / OG tags | ✅ Done | Root metadata present, live URL set |
+| Custom OG image | ❌ Missing | `/og-image.png` needs a real branded asset |
 | Framer Motion animations | ✅ Done | Scroll reveals, staggers, count-up stats |
-| `prefers-reduced-motion` | ✅ Done | Respected across animations |
+| `prefers-reduced-motion` | ✅ Done | Respected across all animations |
 | `npm run build` | ✅ Verified | Passed on 2026-03-23 outside sandbox |
-| GitHub push | ✅ Done | `main` pushed to `origin` |
+| GitHub push (Session 4) | ❌ Pending | Session 4 changes not yet committed/pushed |
 | Vercel deploy | ✅ Live | `https://noahneriportfolio.vercel.app/` |
 | Custom domain | ❌ Not started | Still using the default `.vercel.app` URL |
 
@@ -165,9 +170,17 @@
 
 ## Known Bugs / Issues / Notes
 
+### Orphaned MMA Showcase Page
+
+- `src/app/projects/mma-fight-model/page.tsx` is no longer linked from the project card. Still exists in the codebase. Needs a decision: keep and link somewhere, repurpose, or delete.
+
+### Dead SVG Assets
+
+- `public/images/projects/prediction-market.svg`, `duolingo-campaign.svg`, `mma-model.svg`, `blockchain-usc.svg` are all unreferenced. Safe to delete.
+
 ### Placeholder MMA Data
 
-- The MMA showcase still uses placeholder accuracy metrics, totals, and sample stats.
+- `src/data/mma-showcase-data.ts` still uses placeholder accuracy metrics, totals, and sample stats.
 
 ### Social Preview Asset Missing
 
@@ -179,8 +192,8 @@
 
 ### Local Workspace Note
 
-- `IMG_3427 - Noah Neri.jpeg` remains untracked at the repo root as the original source headshot.
+- `IMG_3427 - Noah Neri.jpeg` remains untracked at the repo root.
 
 ### Resume Data Note
 
-- Original prompt said GPA `3.28`; the updated March 2026 PDF shows `3.34`. The site uses `3.34`.
+- Original prompt said GPA `3.28`; the March 2026 PDF shows `3.34`. The site uses `3.34`.
